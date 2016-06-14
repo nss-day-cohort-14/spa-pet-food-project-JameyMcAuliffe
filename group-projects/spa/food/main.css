@@ -1,0 +1,31 @@
+
+.chuck,
+.purina {
+	background-color: lightblue;
+	border: 3px solid darkblue;
+	border-radius: 5%;
+	display: inline-flex;
+	width: 45%;
+	height: 330px;
+	flex-direction: column;
+	text-align: center;
+}
+
+.chuck-type1,
+.chuck-type2,
+.purina-type1,
+.purina-type2 {
+	background-color: lightgray;
+}
+
+.chuck {
+	margin-right: 4%;
+	margin-left: 2.5%;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+}
+
+
