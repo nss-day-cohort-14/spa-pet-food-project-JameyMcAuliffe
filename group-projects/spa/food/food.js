@@ -1,26 +1,37 @@
 
-//Dog food XHR object
+//XHR objects
 var dogRequest = new XMLHttpRequest();
+var catRequest = new XMLHttpRequest();
 
 //Event Listeners
-dogRequest.addEventListener("load", test);
+dogRequest.addEventListener("load", dogLoad);
+catRequest.addEventListener("load", catLoad);
 
 //Grab json data/ start
 dogRequest.open("GET", "dog-food.json");
 dogRequest.send();
+catRequest.open("GET", "cat-food.json");
+catRequest.send();
 
-//array declarations
+//Dog array declarations
 var names = [];
 var types = [];
 var sizes = [];
 var prices = [];
 
+//Cat array declarations
+var catNames = [];
+var catBreeds = [];
+var catTypes = [];
+var catSizes = [];
+var catPrices = [];
 
 
-//Test function
-function test() {
 
-	//varaibl declarations
+//DogLoad function, pushing object property values into corresponding arrays
+function dogLoad() {
+
+	//varaible declarations
 	var dogFood = JSON.parse(this.responseText);
 	var container = document.getElementById("container");
 	
@@ -47,15 +58,7 @@ function test() {
 		
 	}
 
-
-	console.log(names);
-	console.log(types);
-	console.log(sizes);
-	console.log(prices);
-
-
-
-	//inserting data into html
+	//inserting dog food data into html
 	document.getElementById("chuck-h1").innerHTML = names[0];
 	document.getElementById("purina-h1").innerHTML = names[1];
 	document.getElementById("chuck-type1").innerHTML = types[0];
@@ -70,10 +73,46 @@ function test() {
 	document.getElementById("puppy-size2").innerHTML = sizes[5] + ": " + prices[5];
 	document.getElementById("purina-standard-size1").innerHTML = sizes[6] + ": " + prices[6];
 	document.getElementById("purina-standard-size2").innerHTML = sizes[7] + ": " + prices[7];
+};
 
+//catLoad function, pushing object property values into corresponding arrays
+function catLoad() {
 
+	//Variable declarations
+	var catFood = JSON.parse(this.responseText);
+	var container = document.getElementById("cat-container");
 
+	//loop to organize info into arrays
+	for (var i = 0; i < catFood.cat_brands.length; i++) {
 
+		//Brand names
+		catNames.push(catFood.cat_brands[i].brand_name);
+
+		for (var j = 0; j < catFood.cat_brands[i].breeds.length; j++) {
+
+			//Breed names
+			catBreeds.push(catFood.cat_brands[i].breeds[j].breed_name);
+
+		}
+
+		for (var k = 0; k < catFood.cat_brands[i].types.length; k++) {
+			
+			//Brand types
+			catTypes.push(catFood.cat_brands[i].types[k].type);
+
+			for(var l = 0; l < catFood.cat_brands[i].types[k].volumes.length; l++) {
+				catSizes.push(catFood.cat_brands[i].types[k].volumes[l].volume);
+				catPrices.push(catFood.cat_brands[i].types[k].volumes[l].price);
+			}
+
+		}
+	}
+
+	console.log(catNames);
+	console.log(catBreeds);
+	console.log(catTypes);
+	console.log(catSizes);
+	console.log(catPrices);
 
 };
 

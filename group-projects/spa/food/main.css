@@ -23,7 +23,8 @@
 	margin-left: 2.5%;
 }
 
-.title {
+.title,
+.cat-title {
 	display: flex;
 	justify-content: center;
 }
