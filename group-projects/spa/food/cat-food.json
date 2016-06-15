@@ -1,8 +1,108 @@
 
+/* Purrina	
+Siamese, Bengal, Showshoe, Munchkin	 
+Kitten, 20oz, 19.99 : Kitten, 32oz, 26.99 : Kitten, 64oz, 34.99 : Elite, 20oz, 24.99 : Elite, 40oz, 47.99
+
+Meow Meal	
+Manx, Egyptian Mau, Himalayan, Rag Doll	 
+Kitten, 24oz, 19.99 : Kitten, 48oz, 34.99 : Adult, 28oz, 22.99 : Adult, 56oz, 40.99 */
+
 {
 	"cat_brands": [
-		{"name": "Purrina"
-
-	}
+		{
+			"brand_name": "Purrina",
+			"breeds": [
+				{
+					"breed_name": "Siamese"
+				},
+				{
+					"breed_name": "Bengal"
+				},
+				{
+					"breed_name": "Showshoe"
+				},
+				{
+					"breed_name": "Munchkin"
+				}
+			],
+			"types": [
+				{
+					"type": "Kitten",
+					"volumes": [
+						{
+							"volume": "20oz",
+							"price": 19.99
+						},
+						{
+							"volume": "32oz",
+							"price": 26.99
+						},
+						{
+							"volume": "64oz",
+							"price": 34.99
+						}
+					]
+				},
+				{
+					"type": "Elite",
+					"volumes": [
+						{
+							"volume": "20oz",
+							"price": 24.99
+						},
+						{
+							"volume": "40oz",
+							"price": 47.99
+						}
+					]
+				}
+			]
+		},
+		{
+			"brand_name": "Meow Meal",
+			"breeds": [
+				{
+					"breed_name": "Manx"
+				},
+				{
+					"breed_name": "Egyptian Mau"
+				},
+				{
+					"breed_name": "Himalayan"
+				},
+				{
+					"breed_name": "Rag Doll"
+				}
+			],
+			"types": [
+				{
+					"type": "Kitten",
+					"volumes": [
+						{
+							"volume": "24oz",
+							"price": 19.99
+						},
+						{
+							"volume": "48oz",
+							"price": 34.99
+						}
+					]
+				},
+				{
+					"type": "Adult",
+					"volumes": [
+						{
+							"volume": "28oz",
+							"price": 22.99
+						},
+						{
+							"volume": "56oz",
+							"price": 40.99
+						}
+					]
+				}
+			]
+		}
 	]
 }
+
