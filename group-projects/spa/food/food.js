@@ -65,14 +65,14 @@ function dogLoad() {
 	document.getElementById("chuck-type2").innerHTML = types[1];
 	document.getElementById("purina-type1").innerHTML = types[2];
 	document.getElementById("purina-type2").innerHTML = types[3];
-	document.getElementById("natural-size1").innerHTML = sizes[0] + ": " + prices[0];
-	document.getElementById("natural-size2").innerHTML = sizes[1] + ": " + prices[1];
-	document.getElementById("standard-size1").innerHTML = sizes[2] + ": " + prices[2];
-	document.getElementById("standard-size2").innerHTML = sizes[3] + ": " + prices[3];
-	document.getElementById("puppy-size1").innerHTML = sizes[4] + ": " + prices[4];
-	document.getElementById("puppy-size2").innerHTML = sizes[5] + ": " + prices[5];
-	document.getElementById("purina-standard-size1").innerHTML = sizes[6] + ": " + prices[6];
-	document.getElementById("purina-standard-size2").innerHTML = sizes[7] + ": " + prices[7];
+	document.getElementById("natural-size1").innerHTML = sizes[0] + ": $" + prices[0];
+	document.getElementById("natural-size2").innerHTML = sizes[1] + ": $" + prices[1];
+	document.getElementById("standard-size1").innerHTML = sizes[2] + ": $" + prices[2];
+	document.getElementById("standard-size2").innerHTML = sizes[3] + ": $" + prices[3];
+	document.getElementById("puppy-size1").innerHTML = sizes[4] + ": $" + prices[4];
+	document.getElementById("puppy-size2").innerHTML = sizes[5] + ": $" + prices[5];
+	document.getElementById("purina-standard-size1").innerHTML = sizes[6] + ": $" + prices[6];
+	document.getElementById("purina-standard-size2").innerHTML = sizes[7] + ": $" + prices[7];
 };
 
 
@@ -115,21 +115,21 @@ function catLoad() {
 	document.getElementById("purrina-h1").innerHTML = catNames[0];
 	document.getElementById("purrina-breeds").innerHTML = catBreeds[0] + ",  " + catBreeds[1] + ",  " + catBreeds[2] + ",  " + catBreeds[3];
 	document.getElementById("purrina-type1").innerHTML = catTypes[0];
-	document.getElementById("purrina-kitten-1").innerHTML = catSizes[0] + ": " + catPrices[0];
-	document.getElementById("purrina-kitten-2").innerHTML = catSizes[1] + ": " + catPrices[1];
-	document.getElementById("purrina-kitten-3").innerHTML = catSizes[2] + ": " + catPrices[2];
+	document.getElementById("purrina-kitten-1").innerHTML = catSizes[0] + ": $" + catPrices[0];
+	document.getElementById("purrina-kitten-2").innerHTML = catSizes[1] + ": $" + catPrices[1];
+	document.getElementById("purrina-kitten-3").innerHTML = catSizes[2] + ": $" + catPrices[2];
 	document.getElementById("purrina-type2").innerHTML = catTypes[1];
-	document.getElementById("elite-1").innerHTML = catSizes[3] + ": " + catPrices[3];
-	document.getElementById("elite-2").innerHTML = catSizes[4] + ": " + catPrices[4];
+	document.getElementById("elite-1").innerHTML = catSizes[3] + ": $" + catPrices[3];
+	document.getElementById("elite-2").innerHTML = catSizes[4] + ": $" + catPrices[4];
 
 	document.getElementById("meow-meal-h1").innerHTML = catNames[1];
 	document.getElementById("meow-meal-breeds").innerHTML = catBreeds[4] + ",  " + catBreeds[5] + ",  " + catBreeds[6] + ",  " + catBreeds[7];
  	document.getElementById("meow-meal-type1").innerHTML = catTypes[2];
- 	document.getElementById("meow-meal-kitten-1").innerHTML = catSizes[5] + ": " + catPrices[5];
- 	document.getElementById("meow-meal-kitten-2").innerHTML = catSizes[6] + ": " + catPrices[6];
+ 	document.getElementById("meow-meal-kitten-1").innerHTML = catSizes[5] + ": $" + catPrices[5];
+ 	document.getElementById("meow-meal-kitten-2").innerHTML = catSizes[6] + ": $" + catPrices[6];
  	document.getElementById("meow-meal-type2").innerHTML = catTypes[3];
- 	document.getElementById("adult-1").innerHTML = catSizes[7] + ": " + catPrices[7];
- 	document.getElementById("adult-2").innerHTML = catSizes[8] + ": " + catPrices[8];
+ 	document.getElementById("adult-1").innerHTML = catSizes[7] + ": $" + catPrices[7];
+ 	document.getElementById("adult-2").innerHTML = catSizes[8] + ": $" + catPrices[8];
 };
 
 
