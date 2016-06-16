@@ -13,7 +13,7 @@ dogRequest.send();
 catRequest.open("GET", "cat-food.json");
 catRequest.send();
 
-//Dog array declarations
+//Dog array declarations to organize json data
 var names = [];
 var types = [];
 var sizes = [];
@@ -58,7 +58,7 @@ function dogLoad() {
 		
 	}
 
-	//inserting dog food data into html
+	//inserting dog food data from arrays into the dom
 	document.getElementById("chuck-h1").innerHTML = names[0];
 	document.getElementById("purina-h1").innerHTML = names[1];
 	document.getElementById("chuck-type1").innerHTML = types[0];
@@ -74,6 +74,8 @@ function dogLoad() {
 	document.getElementById("purina-standard-size1").innerHTML = sizes[6] + ": " + prices[6];
 	document.getElementById("purina-standard-size2").innerHTML = sizes[7] + ": " + prices[7];
 };
+
+
 
 //catLoad function, pushing object property values into corresponding arrays
 function catLoad() {
@@ -100,6 +102,7 @@ function catLoad() {
 			//Brand types
 			catTypes.push(catFood.cat_brands[i].types[k].type);
 
+			//sizes and prices
 			for(var l = 0; l < catFood.cat_brands[i].types[k].volumes.length; l++) {
 				catSizes.push(catFood.cat_brands[i].types[k].volumes[l].volume);
 				catPrices.push(catFood.cat_brands[i].types[k].volumes[l].price);
@@ -108,6 +111,7 @@ function catLoad() {
 		}
 	}
 
+	//Inserting cat data from arrays into the dom
 	document.getElementById("purrina-h1").innerHTML = catNames[0];
 	document.getElementById("purrina-breeds").innerHTML = catBreeds[0] + ",  " + catBreeds[1] + ",  " + catBreeds[2] + ",  " + catBreeds[3];
 	document.getElementById("purrina-type1").innerHTML = catTypes[0];
@@ -126,13 +130,6 @@ function catLoad() {
  	document.getElementById("meow-meal-type2").innerHTML = catTypes[3];
  	document.getElementById("adult-1").innerHTML = catSizes[7] + ": " + catPrices[7];
  	document.getElementById("adult-2").innerHTML = catSizes[8] + ": " + catPrices[8];
-	// console.log(catNames);
-	// console.log(catBreeds);
-	// console.log(catTypes);
-	// console.log(catSizes);
-	// console.log(catPrices);
-
-
 };
 
 
