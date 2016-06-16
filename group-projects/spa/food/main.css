@@ -11,14 +11,31 @@
 	text-align: center;
 }
 
+.purrina,
+.meow-meal {
+	background-color: lightblue;
+	border: 3px solid darkblue;
+	border-radius: 5%;
+	display: inline-flex;
+	width: 45%;
+	height: 425px;
+	flex-direction: column;
+	text-align: center;
+}
+
 .chuck-type1,
 .chuck-type2,
 .purina-type1,
-.purina-type2 {
+.purina-type2,
+.purrina-type1,
+.purrina-type2,
+.meow-meal-type1,
+.meow-meal-type2 {
 	background-color: lightgray;
 }
 
-.chuck {
+.chuck,
+.purrina {
 	margin-right: 4%;
 	margin-left: 2.5%;
 }
@@ -28,5 +45,20 @@
 	display: flex;
 	justify-content: center;
 }
+
+.chuck-h1,
+.purina-h1,
+.purrina-h1,
+.meow-meal-h1 {
+	text-shadow: 1px 0 0 darkblue;
+}
+
+
+
+
+
+
+
+
 
 

@@ -42,12 +42,12 @@ function dogLoad() {
 		//brand names
 		names.push(dogFood.dog_brands[i].name);
 
-		for (var j = 0; j < dogFood.dog_brands.length; j++) {
+		for (var j = 0; j < dogFood.dog_brands[i].types.length; j++) {
 
 		//types
 		types.push(dogFood.dog_brands[i].types[j].type);
 
-			for (var k = 0; k < dogFood.dog_brands.length; k++) {
+			for (var k = 0; k < dogFood.dog_brands[i].types[j].volumes.length; k++) {
 			//sizes
 			sizes.push(dogFood.dog_brands[i].types[j].volumes[k].name);
 		
@@ -108,11 +108,30 @@ function catLoad() {
 		}
 	}
 
-	console.log(catNames);
-	console.log(catBreeds);
-	console.log(catTypes);
-	console.log(catSizes);
-	console.log(catPrices);
+	document.getElementById("purrina-h1").innerHTML = catNames[0];
+	document.getElementById("purrina-breeds").innerHTML = catBreeds[0] + ",  " + catBreeds[1] + ",  " + catBreeds[2] + ",  " + catBreeds[3];
+	document.getElementById("purrina-type1").innerHTML = catTypes[0];
+	document.getElementById("purrina-kitten-1").innerHTML = catSizes[0] + ": " + catPrices[0];
+	document.getElementById("purrina-kitten-2").innerHTML = catSizes[1] + ": " + catPrices[1];
+	document.getElementById("purrina-kitten-3").innerHTML = catSizes[2] + ": " + catPrices[2];
+	document.getElementById("purrina-type2").innerHTML = catTypes[1];
+	document.getElementById("elite-1").innerHTML = catSizes[3] + ": " + catPrices[3];
+	document.getElementById("elite-2").innerHTML = catSizes[4] + ": " + catPrices[4];
+
+	document.getElementById("meow-meal-h1").innerHTML = catNames[1];
+	document.getElementById("meow-meal-breeds").innerHTML = catBreeds[4] + ",  " + catBreeds[5] + ",  " + catBreeds[6] + ",  " + catBreeds[7];
+ 	document.getElementById("meow-meal-type1").innerHTML = catTypes[2];
+ 	document.getElementById("meow-meal-kitten-1").innerHTML = catSizes[5] + ": " + catPrices[5];
+ 	document.getElementById("meow-meal-kitten-2").innerHTML = catSizes[6] + ": " + catPrices[6];
+ 	document.getElementById("meow-meal-type2").innerHTML = catTypes[3];
+ 	document.getElementById("adult-1").innerHTML = catSizes[7] + ": " + catPrices[7];
+ 	document.getElementById("adult-2").innerHTML = catSizes[8] + ": " + catPrices[8];
+	// console.log(catNames);
+	// console.log(catBreeds);
+	// console.log(catTypes);
+	// console.log(catSizes);
+	// console.log(catPrices);
+
 
 };
 
